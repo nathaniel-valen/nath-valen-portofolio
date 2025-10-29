@@ -1,4 +1,4 @@
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
@@ -10,7 +10,7 @@ import Organization from "./sections/Organization";
 export default function HomePage() {
   return (
     <main className="min-h-screen flex flex-col items-center">
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
       <About />
       <TechStack />

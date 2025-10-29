@@ -1,7 +1,10 @@
+import { i } from "framer-motion/client";
+
 export const metadata = {
   title: "Nath Portfolio",
   description: "Personal website by Nath — built with Next.js, Tailwind CDN & GSAP",
 };
+import Footer from "./components/Footer";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -34,6 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-gray-950 text-gray-100 transition-colors duration-300">
         {children}
+        <Footer />
       </body>
     </html>
   );
